@@ -1,5 +1,7 @@
 # wordler
 
+![demo](./docs/examples/demo.svg)
+
 ## Installation
 ```
 go install github.com/bertrandom/wordler@latest
