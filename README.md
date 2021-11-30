@@ -3,6 +3,14 @@
 [![demo](https://asciinema.org/a/452632.svg)](https://asciinema.org/a/452632?autoplay=1)
 
 ## Installation
+
+If you don't have go installed, you can install it with:
+```
+brew install go
+```
+
+And then:
+
 ```
 go install github.com/bertrandom/wordler@latest
 ```
