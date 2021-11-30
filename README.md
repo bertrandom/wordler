@@ -11,6 +11,12 @@ If you don't have go installed, you can install it with:
 brew install go
 ```
 
+```
+go version
+```
+
+should be at least 1.17.
+
 And then:
 
 ```
