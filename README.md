@@ -1,5 +1,7 @@
 # wordler
 
+Play [WORDLE](https://www.powerlanguage.co.uk/wordle/) on the command line.
+
 [![demo](https://asciinema.org/a/452632.svg)](https://asciinema.org/a/452632?autoplay=1)
 
 ## Installation
