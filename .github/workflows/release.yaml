@@ -29,8 +29,8 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        # goarm: ${{ matrix.goarm }}
-        # goversion: "https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz"
-        # project_path: "./"
+        goarm: ${{ matrix.goarm }}
+        goversion: "https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz"
+        project_path: "./"
         binary_name: "wordler"
         # extra_files: LICENSE.txt README.md
