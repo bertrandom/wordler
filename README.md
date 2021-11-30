@@ -1,6 +1,6 @@
 # wordler
 
-[![demo](https://asciinema.org/a/335480.svg)](https://asciinema.org/a/335480?autoplay=1)
+[![demo](https://asciinema.org/a/452632.svg)](https://asciinema.org/a/452632?autoplay=1)
 
 ## Installation
 ```
