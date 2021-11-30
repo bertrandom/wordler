@@ -61,7 +61,9 @@ func displayInputWord(word string) {
 		pterm.NewLettersFromStringWithStyle(word, pterm.NewStyle(pterm.FgWhite, pterm.Bold)), pterm.NewLettersFromStringWithStyle(blanks, pterm.NewStyle(pterm.FgWhite, pterm.Bold))).
 		Srender()
 	pterm.DefaultCenter.Print(t)
-	pterm.DefaultCenter.Print()
+	if !strings.Contains(word, "q") {
+		pterm.DefaultCenter.Print()
+	}
 	displayAlphabet()
 	pterm.DefaultCenter.Print()
 	pterm.DefaultCenter.Print()
