@@ -1,7 +1,5 @@
 module github.com/bertrandom/wordler
 
-replace code.bert.org/wordler => github.com/bertrandom/wordler v0.0.0-20211130181348-613ece2e9097
-
 go 1.17
 
 require (
