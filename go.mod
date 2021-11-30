@@ -1,4 +1,4 @@
-module code.bert.org/wordler
+module github.com/bertrandom/wordler
 
 go 1.17
 
