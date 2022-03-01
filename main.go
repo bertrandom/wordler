@@ -13,8 +13,12 @@ import (
 	"github.com/pterm/pterm"
 )
 
-//go:embed data/words.json
-var rawWords []byte
+//go:embed data/words-nytimes.json
+var rawWordsNytimes []byte
+
+//go:embed data/words-legacy.json
+var rawWordsLegacy []byte
+
 
 const (
 	NotGuessed int = 0
@@ -167,6 +171,9 @@ func main() {
 	dateString := ""
 	cli.StringFlag("date", "Date to play (e.g. 2021-11-24)", &dateString)
 
+	var legacy bool
+	cli.BoolFlag("legacy", "Use legacy wordlist?", &legacy)
+
 	// Define action for the command
 	cli.Action(func() error {
 
@@ -181,7 +188,11 @@ func main() {
 
 		var words Words
 
-		json.Unmarshal(rawWords, &words)
+		if legacy {
+			json.Unmarshal(rawWordsLegacy, &words)
+		} else {
+			json.Unmarshal(rawWordsNytimes, &words)
+		}
 
 		t1 := Date(2021, 6, 19)
 		today := time.Now()
