@@ -163,7 +163,7 @@ func main() {
 	const lines = 10
 
 	// Create new cli
-	cli := clir.NewCli("wordler", "Play WORDLE on the command line", "v1.0.3")
+	cli := clir.NewCli("wordler", "Play WORDLE on the command line", "v1.0.4")
 
 	cli.SetBannerFunction(customBanner)
 

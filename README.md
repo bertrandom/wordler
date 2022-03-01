@@ -34,3 +34,8 @@ If you want to play a different date, try:
 ```
 wordler -date 2021-11-24
 ```
+
+Wordler now uses the NYTimes word list because that's what everyone else is using, but if you want to use the original wordlist, use the `-legacy` flag, like this:
+```
+wordler -legacy
+```
